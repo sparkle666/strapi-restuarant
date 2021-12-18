@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_resturant_review_review_and_addresses",
+  "info": {
+    "displayName": "reviewAndAddress",
+    "icon": "border-all"
+  },
+  "options": {},
+  "attributes": {
+    "review": {
+      "type": "integer"
+    },
+    "address": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "resturants",
+  "info": {
+    "singularName": "resturant",
+    "pluralName": "resturants",
+    "displayName": "Resturant",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": false
+    },
+    "dateOpened": {
+      "type": "date"
+    },
+    "timeOpened": {
+      "type": "time"
+    },
+    "gateFee": {
+      "type": "integer"
+    },
+    "images": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "forKids": {
+      "type": "boolean",
+      "default": true
+    },
+    "reviewAddress": {
+      "displayName": "reviewAndAddress",
+      "type": "component",
+      "repeatable": false,
+      "component": "resturant-review.review-and-address"
+    }
+  }
+}
