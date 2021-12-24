@@ -46,6 +46,12 @@
       "type": "component",
       "repeatable": false,
       "component": "resturant-review.review-and-address"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "resturants"
     }
   }
 }

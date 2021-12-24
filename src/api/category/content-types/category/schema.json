@@ -19,8 +19,9 @@
     },
     "resturants": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::resturant.resturant"
+      "relation": "manyToMany",
+      "target": "api::resturant.resturant",
+      "inversedBy": "categories"
     }
   }
 }
